@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .edit-modal-content {
+    background-color: #242424;
+    width: 70%;
+    height: auto;
+    font-family: "Montserrat SemiBold";
+    color: #DFDFDF;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  .edit-modal-wrapper{
+    pointer-events: none;
+    position: fixed;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    top:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .back-drop {
+    background: #000000;
+    opacity: 90%;
+    height: 100%;
+    position: fixed;
+    transition: all 1.3s;
+    width: 100%;
+  }
+  .content {
+    margin: 20px;
+  }
+  .close{
+    font-size:30px;
+    float:right;
+  }
+  .save-day-btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #C8C8C8;
+    font-size: 14px;
+    font-family: "Montserrat ExtraBold";
+    color: #151515;
+    margin: 10px;
+    margin-left: auto;
+  }
+  .add-btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #C8C8C8;
+    font-size: 14px;
+    font-family: "Montserrat ExtraBold";
+    color: #151515;
+    margin: 10px;
+    align-self: center;
+  }
+  .editable-container{
+    width: 100%;
+    background-color: #C8C8C8;
+    color: #151515;
+    overflow: auto;
+  }
+  .editable-content{
+    width: 100%;
+    border-right: 2px solid #151515;
+    height: 4vh;
+    border-radius: 20px;
+    color: #151515;
+    margin: 40px;
+  }
+  .icon-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #151515;
+  }
+  .icon-content:last-child{
+    padding-left: 5px;
+    background-color: rgb(131, 55, 55);
+    border-right: none;
+    border-radius: 0 20px 20px 0;
+  }
+  .textarea-style{
+    outline: none;
+    width: 100%;
+    height: 100%;
+    resize:none;    
+    background-color:  #C8C8C8;
+    border: none;
+    font-size: 18px;
+    font-family: "Montserrat SemiBold";
+    color: #151515;
+    text-align: center;
+    display: inline-block;
+  }
+  .fa-chevron-down{
+    opacity: 50%;
+  }
+  .search{
+    display: flex;
+    align-items: center;
+    height: 4vh;
+    
+  }

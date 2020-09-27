@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .modal-content {
+    background-color: #242424;
+    width: 70%;
+    height: auto;
+    font-family: "Montserrat SemiBold";
+    color: #DFDFDF;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  .modal-wrapper{
+    pointer-events: none;
+    position: fixed;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    top:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .back-drop {
+    background: #000000;
+    opacity: 90%;
+    height: 100%;
+    position: fixed;
+    transition: all 1.3s;
+    width: 100%;
+    z-index: 999;
+  }
+  .content {
+    margin: 20px;
+  }
+  .close{
+    font-size:30px;
+    float:right;
+  }
