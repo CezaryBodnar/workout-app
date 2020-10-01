@@ -143,6 +143,7 @@ i{
   font-family: "Montserrat ExtraBold";
   color: white;
   margin: 10px;
+  padding-top:10px;
 }
 
 .edit-day-btn{
@@ -155,6 +156,7 @@ i{
   color: #151515;
   margin: 10px;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .clear-btn{
@@ -218,7 +220,7 @@ i{
   align-items: center;
   margin-left: 150px;
   margin-bottom: 170px;
-
+  
 }
 .filter-option{
   display: flex;
@@ -226,4 +228,26 @@ i{
   justify-content: flex-start;
   margin: 10px;
   margin-left: 25px;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  margin-left: 6vh;
+}
+.title button {
+  background-color:grey;
+  color: white;
+  border: none;
+}
+.title button:hover {
+  background-color:grey;
+  color: white;
+  border: none;
+}
+.title input {
+  color: rgb(22, 22, 22);
+  border-radius: 8px;
+  font-family: "Montserrat SemiBold";
+  font-size: 20px;
 }

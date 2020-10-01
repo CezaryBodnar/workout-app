@@ -1,6 +1,0 @@
-- lista ćwiczeń kalistenicznych, pogrupowane pod partie miesniowe( biceps, triceps)/rodzaj ćwiczenia(rodzaje pompek, rodzaje podciągnięć), split ( push/pull/nogi itp.)
-- ustawianie planu trenigowego - nazwa ćwiczenia, opis?, link do yt?, serie, tempo, przerwy, uwagi
-- funkcjonalności dla ustawionego planu: usuwanie, edytowanie, podmiana ćwiczenia, dodawanie nowego ćwiczenia
-- oddzielny formularz do wypełniania progresu 
-- kalendarz planowania?
-

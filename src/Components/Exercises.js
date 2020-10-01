@@ -44,7 +44,7 @@ function Exercises() {
 
     useEffect(() => {
         filteredHandler();
-    }, [radio]);
+    }, [radio]) // eslint-disable-line react-hooks/exhaustive-deps
 
     const closeModalHandler = () => setShow(false);
 
@@ -90,6 +90,7 @@ function Exercises() {
             </div>
             <Filter showFilter={showFilter} closeFilter={closeFilterHandler} setRadio={setRadio} radio={radio} filteredList={filteredList} />
             <Modal show={show} close={closeModalHandler} modalContent={modalContent} />
+            <p style={{ textAlign: "right", position: "sticky", top: "100%" }}>Treść strony na podstawie książki: A. Kalym, Siła i sprawność Kalistenika, Galaktyka, Łódź 2016</p>
         </div>
     )
 }
