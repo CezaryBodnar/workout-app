@@ -1,16 +1,16 @@
 # Workout app
 
 ## Lista Funkcjonaności:
-### Zakładka Ćwiczenia.
+Zakładka Ćwiczenia.
 -
 -
 -
 
-### Zakładka Plan treningwy.
+Zakładka Plan treningowy.
 -
 -
 - 
-### Zakładka Proges.
+Zakładka Proges.
 -
 -
 - 
