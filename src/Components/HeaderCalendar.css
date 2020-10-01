@@ -1,0 +1,23 @@
+.month-name{
+    display: flex;
+    height: 10vh;
+    font-size: 40px;
+    font-family: "Montserrat ExtraBold";
+    color: white;
+    margin: 10px;
+    padding-top:20px;
+}
+.previous {
+    flex: 1;
+    text-align: left;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+.next {
+  width: 10px;
+    flex: 1;
+    text-align: right;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
