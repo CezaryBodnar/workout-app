@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react'
 import EditMondayModal from '../EditDays/EditMondayModal'
 import EdiText from 'react-editext'
 
-
 const Monday = ({ MondayValues, setMondayValues }) => {
-
     const [editMonday, seteditMonday] = useState(false)
     const [titleMonday, setTitleMonday] = useState("Poniedziałek");
 
@@ -42,6 +40,7 @@ const Monday = ({ MondayValues, setMondayValues }) => {
         getLocalMondayRoutine();
         getLocalMondayTitle();
     }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
     return (
         <>
             {editMonday && <EditMondayModal editMonday={editMonday} seteditMonday={seteditMonday} close={closeEditModalHandler} MondayValues={MondayValues} setMondayValues={setMondayValues} />}

@@ -1,5 +1,6 @@
 import React from "react";
 import './HeaderCalendar.css'
+import './Modal.css'
 
 export default function CalendarHeader({ value, onChange }) {
 
@@ -28,6 +29,9 @@ export default function CalendarHeader({ value, onChange }) {
             <div className="previous" onClick={() => !thisMonth() && onChange(prevMonth())}>{!thisMonth() ? String.fromCharCode(171) : null}</div>
             <div className="current"> {currMonthName()} {currYear()}</div>
             <div className="next" onClick={() => onChange(nextMonth())}>{String.fromCharCode(187)}</div>
+            <div className="info"><i className="fas fa-info-circle"></i></div>
+            <span className="tooltiptext">Kliknij dwukrotnie na dzień aby edytować.</span>
         </div>
+
     );
 }

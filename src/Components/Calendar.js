@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
 import Header from "./HeaderCalendar";
+import './HeaderCalendar.css'
 import "./Progress.css";
 
 export default function Calendar({ value, onChange, openProgressModal }) {
     const [calendar, setCalendar] = useState([]);
+    //const [fill, setFill] = useState(false)
 
     useEffect(() => {
         setCalendar(buildCalendar(value));
@@ -44,8 +46,6 @@ export default function Calendar({ value, onChange, openProgressModal }) {
         return "";
     }
 
-
-
     return (
         <div className="calendar">
             <Header value={value} onChange={onChange} />
@@ -63,20 +63,24 @@ export default function Calendar({ value, onChange, openProgressModal }) {
                                 key={index}
                                 className="calendar-day"
                                 onDoubleClick={openProgressModal}
+
                                 onClick={() => {
-                                    if (day < moment(new Date()).startOf("day")) return;
-                                    onChange(day);
+                                    if (day === moment(new Date()).startOf("day")) return;
+                                    onChange(day)
                                 }}
                             >
                                 <div className={dayStyles(day)}>
-                                    {day.format("D").toString()}
+                                    {day.format("D").toString()
+                                    }
                                 </div>
+
                             </div>
+
                         ))}
                     </div>
                 ))}
             </div>
 
-        </div>
+        </div >
     );
 }

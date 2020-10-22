@@ -18,7 +18,8 @@ nav {
 }
 
 .gallery {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(4, [col-start] fit-content(350px) [col-end]);
   grid-row-gap:30px;
   grid-column-gap: 50px;
@@ -60,6 +61,7 @@ footer .footer-content {
   background-color: grey;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .exercise-name{
@@ -97,7 +99,7 @@ footer {
   background-color:#888888;
   border-radius: 8px;
   color: white;
-  
+  font-size: 14px;
 }
 .search-bar::placeholder{
   opacity: 50%;
@@ -250,4 +252,40 @@ i{
   border-radius: 8px;
   font-family: "Montserrat SemiBold";
   font-size: 20px;
+}
+
+.input-done{
+  display: flex;
+  justify-content: center;
+  margin-left: 6vh;
+}
+.input-done button {
+  background-color:#242424;
+  color: white;
+  border: none;
+}
+.input-done button:hover {
+  background-color:#242424;
+  color: white;
+  border: none;
+}
+.input-done textarea {
+  color: rgb(22, 22, 22);
+  border-radius: 8px;
+  font-family: "Montserrat SemiBold";
+  font-size: 20px;
+  width: 120vh;
+}
+
+.my-custom-view-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.bibliography{
+  text-align: right;
+  position: sticky; 
+  top: 100%;
+  margin-right: 10px;
 }

@@ -67,7 +67,8 @@ function Exercises() {
     }
     return (
 
-        <div className="container">
+        <div>
+            <p className="bibliography">Treść strony na podstawie książki: A. Kalym, Siła i sprawność Kalistenika, Galaktyka, Łódź 2016</p>
             {showFilter ? <div onClick={closeFilterHandler} className="back-drop"></div> : null}
             <div className="filter-bar">
                 <input onChange={(e) => setFilter(e.target.value)} value={filter} className="search-bar" placeholder=" wyszukaj..."></input><i className="fas fa-search lupa"></i>
@@ -90,7 +91,6 @@ function Exercises() {
             </div>
             <Filter showFilter={showFilter} closeFilter={closeFilterHandler} setRadio={setRadio} radio={radio} filteredList={filteredList} />
             <Modal show={show} close={closeModalHandler} modalContent={modalContent} />
-            <p style={{ textAlign: "right", position: "sticky", top: "100%" }}>Treść strony na podstawie książki: A. Kalym, Siła i sprawność Kalistenika, Galaktyka, Łódź 2016</p>
         </div>
     )
 }

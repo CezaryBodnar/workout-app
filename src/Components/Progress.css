@@ -24,6 +24,7 @@
     font-family: "Montserrat SemiBold";
     cursor: pointer;
 }
+
 .days{
     display: flex;
     justify-content: center;
@@ -50,21 +51,22 @@
   }
 
 .calendar-day div.before {
-    color: grey;
+    color: rgb(134, 134, 134);
+
     border-radius: 16px;
   }
-  
-.calendar-day div.selected {
-    background-color: rgb(194, 51, 51);
-    color: white;
-    font-weight: bold;
-    border-radius: 16px;
-  }
+
   
 .calendar-day .today {
-    background-color: rgb(241, 241, 241);
+    background-color: white;
     border-radius: 16px;
   }
+
+  .calendar-day .filled { 
+    background-color: green;
+    border-radius: 16px;
+  }
+
 
 .days:last-child {
     margin-bottom: 15px;
