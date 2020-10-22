@@ -6,7 +6,7 @@
 -
 -
 
-### Zakładka Plan treningwy.
+### Zakładka Plan treningowy.
 -
 -
 - 
